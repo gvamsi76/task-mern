@@ -1,0 +1,93 @@
+.page-title-box {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 -27px 0;
+    padding: 20px 27px;
+
+    .page-title {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .breadcrumb {
+        padding: 0;
+    }
+}
+
+@media (max-width: 639px) {
+    .page-title-box {
+        display: block;
+
+        .page-title {
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .page-title-right {
+            display: block;
+            padding-top: 5px;
+        }
+    }
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.pagination ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.pagination li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.pagination li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #505050;
+    border: 1px solid transparent;
+}
+
+.pagination li a:hover {
+    color: #3965ce;
+    background-color: #e3eaf3;
+    border: 1px solid #cacaca;
+}
+
+/* Active page styles */
+.pagination li.active a {
+    background-color: #003087 !important;
+    color: #fff !important;
+    border: 1px solid #003087 !important;
+}
+
+/* Styles for previous/next buttons */
+.pagination li.previous a,
+.pagination li.next a {
+    color: #333;
+}
+
+.pagination li.previous a:hover,
+.pagination li.next a:hover {
+    background-color: #e3eaf3;
+    border: 1px solid #cacaca;
+}
